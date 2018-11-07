@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Montserrat","Montserrat", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif, Microsoft JhengHei, 微軟正黑體;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
@@ -16,58 +16,40 @@ body {
 }
 
 
-/*#wrapper h1{ 
-  text-align: center;
-  color: #1ECD97;
-  font: bold 50px Arial;
-  padding: 10px;
-  border-bottom: 1px solid;
-  width: 250px;
-  margin: 0 auto 25px;
-}
-
 .toggles{ 
-  width: 800px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   margin: auto;
-  display: block;
-  
-  clear: both;
+  margin-bottom: 30px;
   overflow: hidden;
 }
 
 button{
   outline: 0;
-  border: 2px solid #1ECD97;
+  border: 2px solid #cabcab;
   border-radius: 40px; 
-  color: #1ECD97;
-  display: block;
-  float: left;
+  background-color: #cabcab;
+  color: #fff;
+  display: inline-block;
   margin: auto;
   padding: 10px;
   width: 150px;
   cursor: pointer;
   font-size: 14px; 
-  margin: 0 5px;
+  margin: 10px 5px;
 }
-
-.posts{
-   width: 800px;
-   margin: 2em auto;
+button:hover,button:focus{
+  outline: 0;
+  background-color: #fff;
+  border: 2px solid #cabcab;
+  color: #cabcab;
 }
-
-.posts div{
-    font: 16px/250px Arial; 
-    width: 245px; 
-    height: 250px;
-    float: left;
-    margin: 10px; 
-    display: block;
-    text-align: center;
-    background: #1ECD97;
-    color: #fff; 
-}*/
-   
-
+@media screen and (max-width: 768px) {
+  button{
+    width: 160px;
+  }
+}
 #page {
   position: relative;
   overflow-x: hidden;
@@ -97,13 +79,13 @@ button{
 }
 
 a {
-  color: #cabcab;
+  color: #93806e;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #cabcab;
+  color: #93806e;
   outline: none;
   text-decoration: none;
 }
@@ -502,10 +484,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .work .work-grid {
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 300px;
   margin-bottom: 20px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -513,13 +493,28 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .work .work-grid .inner {
   display: table;
-  height: 300px;
   width: 100.1%;
   opacity: 0;
   background: rgba(237, 235, 232, 0.9);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+.web-height{
+    height: 300px;
+    background-position: center center;
+}
+.banner-height{
+    height: 180px;
+    background-position: center center;
+}
+.edm-height{
+    height: 700px;
+    background-position: center top;
+}
+.edm-height2{
+    height: 500px;
+    background-position: center top;
 }
 @media screen and (max-width: 768px) {
   .work .work-grid .inner {
@@ -1064,6 +1059,9 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
   border: 2px solid #cabcab;
 }
+.btn-primary_left {
+  display: inline-block;
+}
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #d4c8bb !important;
   border-color: #d4c8bb !important;
@@ -1207,6 +1205,16 @@ h1, h2, h3, h4, h5, h6, figure {
   border-color: #cabcab;
 }
 
+.row_img{
+  max-width: 48%;
+  display: inline-block;
+  margin-right:10px; 
+}
+@media screen and (max-width: 640px) {
+  .row_img{
+  max-width: 45%;
+  }
+}
 .row-pt-md {
   padding-top: 4em !important;
 }
@@ -1233,61 +1241,11 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0;
 }
 
-.testimony {
-  margin: 5em 0;
-}
-@media screen and (max-width: 768px) {
-  .testimony {
-    margin: 3em 0;
-  }
-}
-
-blockquote {
-  padding-left: 0;
-  border-left: none;
-}
-blockquote p {
-  font-family: "Georgia", Times;
-  font-style: italic;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #666666;
-}
-blockquote .person {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 14px;
-  color: #b3b3b3;
-}
-blockquote .person cite {
-  font-style: normal;
-  color: #000;
-}
-
 .portfolio-navigation i {
   font-size: 20px;
   position: relative;
   top: 3px;
 }
 
-.role {
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
-}
-.role h3 {
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-}
-.role ul {
-  padding: 0;
-  margin: 0;
-}
-.role ul li {
-  font-size: 14px;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 5px 0;
-}
 
 /*# sourceMappingURL=style.css.map */
