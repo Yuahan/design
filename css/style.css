@@ -45,11 +45,6 @@ button:hover,button:focus{
   border: 2px solid #cabcab;
   color: #cabcab;
 }
-@media screen and (max-width: 768px) {
-  button{
-    width: 160px;
-  }
-}
 #page {
   position: relative;
   overflow-x: hidden;
